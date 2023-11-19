@@ -26,9 +26,19 @@ if __name__ == "__main__":
     modified_clusters = clusters.copy()
 
     for i in range(clusters_number):
+        average_color_in_cluster = [0, 0, 0]
         for j in range(len(clusters[i])):
             for k in range(1, len(modified_clusters[i][j])):
-                modified_clusters[i][j][k] = clusters[i][0][k]
+                average_color_in_cluster[k-1] += modified_clusters[i][j][k]
+
+        average_color_in_cluster[0] /= len(clusters[i])
+        average_color_in_cluster[1] /= len(clusters[i])
+        average_color_in_cluster[2] /= len(clusters[i])
+
+        for j in range(len(clusters[i])):
+
+            for k in range(1, len(modified_clusters[i][j])):
+                modified_clusters[i][j][k] = average_color_in_cluster[k-1]
 
     new_indexed_pixel_values = list(chain(*modified_clusters))
     new_pixel_values = [[0, 0, 0] for i in range(len(new_indexed_pixel_values))]

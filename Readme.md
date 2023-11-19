@@ -12,17 +12,32 @@ are still provided in ```requirements.txt``` file.
 
 ## 📽️ Demo 📽️
 
+### example 1 - Tagetes
 ### original
 
 ![original](./demos/img_5.jpg)
 
 ### 3 colors
 
-![original](./demos/img_520231119035212.jpg)
+![3_colors](./demos/img_520231119204401.jpg)
+
+
+### 8 colors
+
+![8_colors](./demos/img_520231119202311.jpg)
 
 ### 16 colors
 
-![original](./demos/img_520231119041422.jpg)
+![16_colors](./demos/img_520231119210347.jpg)
+
+### example 2 - Viburnum
+### original
+
+![original](./demos/img_1.jpg)
+
+### 8 colors
+
+![8_colors](./demos/img_120231119202942.jpg)
 
 ## Applications and remarks
 
